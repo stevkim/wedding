@@ -1,10 +1,15 @@
 import NavBar from "./Components/Navbar";
+import Welcome from "./Components/Pages/Welcome";
+import Timeline from "./Components/Pages/Timeline";
+import Seating from './Components/Pages/TableSeating'
 
 function App() {
   return (
-    <div>
+    <div className="bg-slate-200">
       <NavBar />
-      <div className="h-screen w-full bg-slate-400">App</div>
+      <Welcome />
+      <Timeline />
+      <Seating />
     </div>
   );
 }
