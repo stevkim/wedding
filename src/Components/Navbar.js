@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import Logo from '../images/logo.jpg';
+import { Link } from 'react-scroll';
+
 
 const NavBar = () => {
     const Links = [
-        {name: "TIMELINE", link:'/'},
+        {name: "TIMELINE", link:'timeline'},
         {name: "VENUE MAP", link:'/'},
-        {name: "GIFT REGISTRY", link:'/'},
-        {name: "TABLE SEATING", link:'/'}
+        {name: "GIFT REGISTRY", link:'honeymoon'},
+        {name: "TABLE SEATING", link:'seating'}
     ]
 
     const [toggle, setToggle] = useState(false);
@@ -35,8 +37,8 @@ const NavBar = () => {
                 <ul className={`md:flex md:items-center md:pb-2 pb-2 md:static absolute left-0 md:w-auto w-full bg-white md:pl-0 pl-3 md:z-auto z-[-1] transition-all duration-500 ease-in md:opacity-100 opacity-0 ${toggle ? 'top-20 opacity-95' : 'top-[-100px]'}`}>
                 {Links.map((link) => {
                     return (
-                    <li key={link.name} className='md:ml-10 md:my-2 mb-3'>
-                        <a href={link.link}>{link.name}</a>
+                    <li key={link.name} className='md:ml-10 md:my-2 mb-3 cursor-pointer'>
+                        <Link to={link.link} spy={true} smooth={true} duration={500} offset={-80}>{link.name}</Link>
                     </li>
                     );
                 })}

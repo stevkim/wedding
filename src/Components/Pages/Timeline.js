@@ -1,5 +1,4 @@
 
-
 const Timeline = () => {
     const timeline = [
         {name: 'CEREMONY', time:'3:30 PM - 4:00 PM', icon: '👰🤵'},
@@ -9,7 +8,7 @@ const Timeline = () => {
     ]
 
     return (
-        <div className="w-full md:w-10/12 bg-white flex flex-col mx-auto border-solid">
+        <div id="timeline" className="w-full md:w-10/12 h-auto bg-white flex flex-col mx-auto">
             <div className="text-2xl text-center">
                 Wedding Day
             </div>
