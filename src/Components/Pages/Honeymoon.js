@@ -1,8 +1,9 @@
 
 const Honeymoon = () => {
     return (
-        <div id="honeymoon" className="w-full md:w-10/12 mx-auto h-auto box-border flex flex-col bg-white">
-            <div className="mx-auto text-center my-8 leading-8">
+        <div id="honeymoon" className="w-full md:w-10/12 mx-auto h-auto box-border flex flex-col bg-white shadow-lg">
+            <h2 className="text-6xl mx-auto my-4 font-sacramento">Honeymoon Fund</h2>
+            <div className="mx-auto text-center mb-8 leading-8 font-oswald">
                 <p>We know it's traditional to write a list,</p>
                 <p>But in this case there is a slight twist,</p>
                 <p>Our home is complete with the usual stuff,</p>
@@ -20,5 +21,13 @@ const Honeymoon = () => {
         </div>
     );
 }
+
+/* The most important part of today is that you are here, 
+We are so excited to be surrounded by people we hold dear,
+although the best gift you've given us is your time,
+please dont take offense if this seems out of line,
+but if you choose to give a gift to celebrate this day,
+we ask for your kindness in a specific way,
+*/
 
 export default Honeymoon;

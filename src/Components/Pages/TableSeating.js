@@ -12,8 +12,7 @@ const Seating = () => {
         {number: 6, guests: []},
         {number: 7, guests: []},
         {number: 8, guests: []},
-        {number: 9, guests: []},
-        {number: 10, guests: []},
+        {number: 9, guests: []}
     ]
 
     const [list, setList] = useState(table);
@@ -21,6 +20,7 @@ const Seating = () => {
 
     return (
         <div id='seating' className="w-full md:w-10/12 bg-white flex flex-col mx-auto px-3 h-auto">
+            <h2 className="text-6xl mx-auto mb-2 font-sacramento">Dinner Seating Arrangements</h2>
             <p className="mb-3 mx-auto">
                 Search By Name: 
                 <input
@@ -29,7 +29,7 @@ const Seating = () => {
                     type="text"
                     value={filter}
                     onChange={(event) => setFiltered(event.target.value.toLowerCase())}
-                    className="ml-1 border-solid border-2 border-red-400"
+                    className="ml-1 border-solid border-2 border-gray-400 rounded-sm"
                 />
             </p>
             <Reorder.Group axis="x" values={list} onReorder={setList} className="w-10/12 mx-auto grid grid-cols-2 md:grid-cols-3 gap-5">
@@ -43,13 +43,13 @@ const Seating = () => {
                                     key={table.number} 
                                     className="py-3 md:p-8 pl-2 h-auto border-solid border-2 border-black-200"
                                 >
-                                    <p className="text-2xl md:text-3xl">Table {table.number}</p>
+                                    <p className="text-2xl md:text-3xl font-sacramento">Table {table.number}</p>
                                     <ul className="leading-4 mt-1">
                                         {
                                             table.guests.filter((guest) => guest.toLowerCase().includes(filter) || filter === '')
                                             .map((guest) => {
                                                 return(
-                                                    <li key={guest.length} className="ml-1 whitespace-nowrap">{guest}</li>
+                                                    <li key={guest} className="ml-1 indent-2 whitespace-nowrap font-oswald">{guest}</li>
                                                 )
                                             })
                                         }
