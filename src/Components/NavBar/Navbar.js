@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Logo from '../../images/logo.jpg';
 import { Link } from 'react-router-dom';
-import MenuIcon from './menu-icon';
+import MenuIcon from '../Utilities/menu-icon';
 
 const NavBar = () => {
 	const Links = [
@@ -14,8 +14,8 @@ const NavBar = () => {
 	const [toggle, setToggle] = useState(false);
 
 	return (
-		<div className="nav-bar w-full md:w-10/12 md:static fixed top-0 left-0 mx-auto z-50">
-			<div className="flex md:flex-col bg-white items-center justify-between px-7 pb-0">
+		<div className="w-full md:static fixed top-0 left-0 mx-auto z-50 shadow-lg">
+			<div className="flex md:flex-col bg-white items-center justify-between px-7 pb-0 overflow-hidden h-[50px] md:h-auto">
 				<div className="flex items-center">
 					<Link to={'/'} onClick={() => setToggle(false)}>
 						<img
@@ -37,7 +37,7 @@ const NavBar = () => {
 				</div>
 				<ul
 					className={`md:flex md:items-center md:pb-2 pb-2 md:static absolute left-0 md:w-auto w-full bg-white md:pl-0 pl-3 md:z-auto z-[-1] transition-all duration-500 ease-in md:opacity-100 opacity-0 ${
-						toggle ? 'top-20 opacity-95' : 'top-[-100px]'
+						toggle ? 'top-[50px] opacity-95' : 'top-[-100px]'
 					}`}
 				>
 					{Links.map((link) => {

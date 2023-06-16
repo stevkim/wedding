@@ -1,12 +1,7 @@
-const TimelineItem = ({props}) => {
-  // time then event
-  const { time, event } = props;
+const TimelineItem = ({ props }) => {
+	const { event } = props;
 
-  return (
-    <div className="text-xl p-4">
-      <p><span className="mr-8">{time}</span>{event}</p>
-    </div>
-  )
-}
+	return <div className="timeline-item">{event}</div>;
+};
 
 export default TimelineItem;

@@ -9,7 +9,8 @@ module.exports = {
         'great-vibes':  ['Permanent Marker', 'cursive'],
         'parisienne': ['Parisienne', 'cursive'],
         'oswald': ['Oswald', 'sans-serif'],
-        'sacramento': ['Sacramento', 'cursive']
+        'sacramento': ['Sacramento', 'cursive'],
+        'fasthand': ['Fasthand', 'cursive']
       }
     },
   },

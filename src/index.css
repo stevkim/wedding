@@ -6,19 +6,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 
 html {
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
 }
 
 .page {
   height: calc(100vh - 50px);
+  aspect-ratio: 1 / 1.414;
   margin: 50px auto 0;
+  overflow: hidden;
 }
 
-.nav-bar {
-  height: 50px;
+.hero-page {
+  background: rgba(251, 250, 245, .4)
 }
 
 .menu-bar-wrapper {
@@ -52,6 +56,11 @@ html {
 }
 
 .hero-title {
+  border: .5px solid black;
+  border-radius: 1px;
+  white-space: nowrap;
+  overflow: visible;
+  width: 50%;
   animation: fade-in .5s ease-in;
 }
 
@@ -68,6 +77,55 @@ html {
 .hero-caption-3 {
   font-size: 3rem;
   animation: translateLeft 1.5s ease-out;
+}
+
+.hero-background {
+  z-index: -10;
+  position: absolute;
+  height: 130%;
+  object-fit: cover;
+  top: -15%;
+  animation: hero-image 5s linear;
+}
+
+.background {
+  z-index: -10;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+}
+
+.end-divider {
+  margin-left: auto;
+  width: 60%;
+  height: 2px;
+  background: black;
+  border-radius: 2px;
+  animation: translateLeft 5s linear;
+}
+
+.timeline-item {
+  height: calc(100% / 6);
+  font-family: Oswald;
+  font-size: 1.4rem;
+}
+
+.search-input {
+  height: inherit;
+  width: inherit;
+  text-indent: .5rem;
+  line-height: 1rem;
+  box-sizing: border-box;
+}
+
+
+@keyframes hero-image {
+  0% {
+    transform: translateY(-5%)
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @keyframes fade-in {

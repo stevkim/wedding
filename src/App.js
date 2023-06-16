@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   
   return (
-    <div className="bg-slate-200 overflow-hidden">
+    <div className="overflow-hidden">
       <NavBar />
         <Routes>
           <Route path="/" element={<Welcome />}/>

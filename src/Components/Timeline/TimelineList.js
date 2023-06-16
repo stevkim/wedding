@@ -1,4 +1,5 @@
 import TimelineItem from './TimelineItem';
+import TimelineTime from './TimelineTime';
 
 const timeline = [
 	{
@@ -19,7 +20,7 @@ const timeline = [
 	},
 	{
 		time: '6:30 PM',
-		event: 'Bouquet Toss & Dance Floor Opens',
+		event: 'Dance Floor Opens',
 	},
 	{
 		time: '7:45 PM',
@@ -29,15 +30,32 @@ const timeline = [
 
 const TimelineList = () => {
 	return (
-		<ul className='w-5/6 mx-auto'>
-			{timeline.map((event) => {
-				return (
-					<li  key={event.time} className='border-b-2 whitespace-nowrap'>
-						<TimelineItem props={event}/>
-					</li>
-				);
-			})}
-		</ul>
+		<div className='w-full'>
+			<div className='w-11/12 ml-auto flex'>
+			<ul className='w-1/3'>
+				{
+					timeline.map(time => {
+						return (
+							<li className=''>
+								<TimelineTime props={time}/>
+							</li>
+						)
+					})
+				}
+			</ul>
+			<ul className='w-2/3 whitespace-nowrap'>
+				{
+					timeline.map(event => {
+						return (
+							<li>
+								<TimelineItem props={event}/>
+							</li>
+						)
+					})
+				}
+			</ul>
+			</div>
+		</div>
 	);
 };
 
