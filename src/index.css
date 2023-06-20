@@ -2,16 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
 html {
-  overflow: hidden;
-  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
   width: 100vw;
+  max-width: 1980px;
+  margin: auto;
 }
 
 .page {
@@ -19,10 +21,21 @@ html {
   aspect-ratio: 1 / 1.414;
   margin: 50px auto 0;
   overflow: hidden;
+  max-width: 1980px;
+  position: relative;
+}
+
+@media only screen and (min-width: 640px) {
+  .page {
+    margin: 0 auto;
+  }
+  html {
+    overflow: hidden;
+  }
 }
 
 .hero-page {
-  background: rgba(251, 250, 245, .4)
+  background: rgba(251, 250, 245, .4);
 }
 
 .menu-bar-wrapper {
@@ -56,12 +69,12 @@ html {
 }
 
 .hero-title {
-  border: .5px solid black;
+  border: 1px solid black;
   border-radius: 1px;
   white-space: nowrap;
-  overflow: visible;
   width: 50%;
   animation: fade-in .5s ease-in;
+  box-sizing: border-box;
 }
 
 .hero-caption-1 {
@@ -83,6 +96,7 @@ html {
   z-index: -10;
   position: absolute;
   height: 130%;
+  max-height: 130vh;
   object-fit: cover;
   top: -15%;
   animation: hero-image 5s linear;
@@ -91,23 +105,14 @@ html {
 .background {
   z-index: -10;
   position: absolute;
-  height: 100%;
+  top: 0;
+  height: 110%;
+  max-height: 130vh;
   object-fit: cover;
 }
 
-.end-divider {
-  margin-left: auto;
-  width: 60%;
-  height: 2px;
-  background: black;
-  border-radius: 2px;
-  animation: translateLeft 5s linear;
-}
-
 .timeline-item {
-  height: calc(100% / 6);
-  font-family: Oswald;
-  font-size: 1.4rem;
+  line-height: 2.5rem;
 }
 
 .search-input {
@@ -118,6 +123,28 @@ html {
   box-sizing: border-box;
 }
 
+.table-wrapper {
+  max-height: 70vh;
+  width: 100%;
+  overflow-y: auto;
+  display: block;
+}
+
+.table {
+  background: rgba(251, 250, 245, .6);
+  font-size: 1.2rem;
+}
+
+.timeline-title {
+  width: 120%;
+}
+
+.divider {
+  height: 0;
+  border: 1px solid;
+  width: 80%;
+  margin: 1rem auto 1rem;
+}
 
 @keyframes hero-image {
   0% {

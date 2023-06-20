@@ -6,11 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'great-vibes':  ['Permanent Marker', 'cursive'],
         'parisienne': ['Parisienne', 'cursive'],
         'oswald': ['Oswald', 'sans-serif'],
         'sacramento': ['Sacramento', 'cursive'],
-        'fasthand': ['Fasthand', 'cursive']
+        'edu': ['Edu NSW ACT Foundation', 'cursive']
       }
     },
   },

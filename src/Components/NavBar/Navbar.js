@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import Logo from '../../images/logo.jpg';
 import { Link } from 'react-router-dom';
 import MenuIcon from '../Utilities/menu-icon';
+import { NavContext } from '../../App';
 
 const NavBar = () => {
 	const Links = [
@@ -10,14 +11,19 @@ const NavBar = () => {
 		{ name: 'GIFT REGISTRY', link: 'registry' },
 		{ name: 'TABLE SEATING', link: 'table-seating' },
 	];
-
-	const [toggle, setToggle] = useState(false);
+	const { nav, openNav } = useContext(NavContext);
 
 	return (
-		<div className="w-full md:static fixed top-0 left-0 mx-auto z-50 shadow-lg">
+		<div
+			className="w-full md:static fixed top-0 left-0 mx-auto z-50 shadow-lg"
+			onClick={(e) => e.stopPropagation()}
+		>
 			<div className="flex md:flex-col bg-white items-center justify-between px-7 pb-0 overflow-hidden h-[50px] md:h-auto">
 				<div className="flex items-center">
-					<Link to={'/'} onClick={() => setToggle(false)}>
+					<Link
+						to={'/'}
+						onClick={() => openNav(false)}
+					>
 						<img
 							src={Logo}
 							className="w-20 h-auto"
@@ -30,14 +36,14 @@ const NavBar = () => {
 					<span className="mb-1 font-oswald">July 9, 2023 - Snohomish, WA</span>
 				</div>
 				<div
-					onClick={() => setToggle(!toggle)}
+					onClick={() => openNav(!nav)}
 					className="cursor-pointer md:hidden"
 				>
-					<MenuIcon prop={toggle}/>
+					<MenuIcon prop={nav} />
 				</div>
 				<ul
 					className={`md:flex md:items-center md:pb-2 pb-2 md:static absolute left-0 md:w-auto w-full bg-white md:pl-0 pl-3 md:z-auto z-[-1] transition-all duration-500 ease-in md:opacity-100 opacity-0 ${
-						toggle ? 'top-[50px] opacity-95' : 'top-[-100px]'
+						nav ? 'top-[50px] opacity-95' : 'top-[-100px]'
 					}`}
 				>
 					{Links.map((link) => {
@@ -48,7 +54,7 @@ const NavBar = () => {
 							>
 								<Link
 									to={link.link}
-									onClick={() => setToggle(false)}
+									onClick={() => openNav(false)}
 								>
 									{link.name}
 								</Link>

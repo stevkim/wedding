@@ -7,7 +7,7 @@ const SearchBar = () => {
 
 	return (
 		<div
-			className={`border-2 overflow-hidden flex justify-center items-center ${
+			className={`border-2 overflow-hidden flex justify-center items-center rounded-sm ${
 				open ? 'w-full' : 'ml-auto w-6 aspect-square'
 			}`}
 		>
