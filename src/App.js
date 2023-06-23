@@ -5,6 +5,7 @@ import Honeymoon from './Components/Pages/Honeymoon';
 import NavBar from './Components/NavBar/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import { useState, createContext } from 'react';
+import WeddingParty from './Components/Pages/WeddingParty';
 
 export const NavContext = createContext(false);
 
@@ -34,6 +35,10 @@ function App() {
 					<Route
 						path="registry"
 						element={<Honeymoon />}
+					/>
+					<Route 
+						path="wedding-party"
+						element={<WeddingParty />}
 					/>
 				</Routes>
 			</NavContext.Provider>

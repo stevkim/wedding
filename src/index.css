@@ -25,6 +25,10 @@ html {
   position: relative;
 }
 
+.background-overlay {
+  background: rgba(251, 250, 245, .3);
+}
+
 @media only screen and (min-width: 640px) {
   .page {
     margin: 0 auto;
@@ -144,6 +148,10 @@ html {
   border: 1px solid;
   width: 80%;
   margin: 1rem auto 1rem;
+}
+
+.content-background {
+  background: rgba(251, 250, 245, .6);
 }
 
 @keyframes hero-image {

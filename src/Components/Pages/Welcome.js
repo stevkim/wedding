@@ -2,7 +2,7 @@ import heroImage from '../../images/hero.jpg';
 
 const Welcome = () => {
 	return (
-		<div className="w-full md:mt-0 box-border flex flex-col page hero-page items-center">
+		<div className="w-full md:mt-0 box-border flex flex-col page background-overlay items-center">
 			<div className="md:hidden text-center flex flex-col mt-16 hero-title justify-center items-center z-10">
 				<span className="text-6xl font-parisienne block mt-2">Steph &</span><span className="text-6xl font-parisienne block"> Steven</span>
 				<span className="my-2 font-oswald">July 9, 2023 - Snohomish, WA</span>

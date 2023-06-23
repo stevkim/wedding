@@ -11,9 +11,8 @@ const Seating = () => {
 	const [filter, setFiltered] = useState('');
 
 	return (
-		<div className="page w-full">
+		<div className="page w-full background-overlay">
 			<div
-				id="seating"
 				className="w-full md:w-10/12 flex flex-col mx-auto h-full overflow-hidden"
 			>
 				<h2 className="text-6xl mx-auto mt-16 mb-2 font-parisienne sm:whitespace-nowrap w-10/12">
@@ -42,7 +41,7 @@ const Seating = () => {
 								<Reorder.Item
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
-									key={table.number}
+									key={table.table}
 									className="py-3 md:p-8 h-auto border-2 border-black-200 table"
 								>
 									<p className="text-3xl font-parisienne whitespace-nowrap text-center w-full">

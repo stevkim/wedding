@@ -7,7 +7,7 @@ import { NavContext } from '../../App';
 const NavBar = () => {
 	const Links = [
 		{ name: 'TIMELINE', link: 'timeline' },
-		{ name: 'VENUE MAP', link: '/' },
+		{ name: 'WEDDING PARTY', link: 'wedding-party'},
 		{ name: 'GIFT REGISTRY', link: 'registry' },
 		{ name: 'TABLE SEATING', link: 'table-seating' },
 	];
