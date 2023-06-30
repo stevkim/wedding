@@ -10,7 +10,7 @@ const NavBar = () => {
 		{ name: 'WEDDING PARTY', link: 'wedding-party'},
 		{ name: 'GIFT REGISTRY', link: 'registry' },
 		{ name: 'TABLE SEATING', link: 'table-seating' },
-		{ name: 'DRINK PAIRINGS', link: 'drink-food-pairings'}
+		{ name: 'DRINK PAIRINGS', link: 'drink-menu'}
 	];
 	const { nav, openNav } = useContext(NavContext);
 

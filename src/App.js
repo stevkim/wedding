@@ -42,7 +42,7 @@ function App() {
 						element={<WeddingParty />}
 					/>
 					<Route 
-						path='drink-food-pairings'
+						path='drink-menu'
 						element={<FoodRec />}
 					/>
 				</Routes>
