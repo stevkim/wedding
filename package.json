@@ -6,7 +6,6 @@
 	},
 	"private": true,
 	"dependencies": {
-		"@babel/plugin-proposal-private-property-in-object": "^7.21.0",
 		"@headlessui/react": "^1.7.13",
 		"@heroicons/react": "^2.0.16",
 		"@testing-library/jest-dom": "^5.16.5",
@@ -48,5 +47,16 @@
 		"@babel/preset-env": "^7.22.5",
 		"babel-loader": "^9.1.2",
 		"webpack": "^5.88.1"
+	},
+	"babel": {
+		"presets": [
+			[
+				"@babel/preset-react",
+				{
+					"useBuiltIns": "usage",
+					"corejs": 3
+				}
+			]
+		]
 	}
 }
