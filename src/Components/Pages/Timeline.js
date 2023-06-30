@@ -4,7 +4,7 @@ import heart from '../../images/heart.png';
 
 const Timeline = () => {
 	return (
-		<div className="w-full md:w-6/12 flex flex-col page items-center">
+		<div className="w-full flex flex-col page items-center">
 			<div className="mt-12 mb-6 mx-auto leading-3 border-2 border-gray-500 justify-center items-center flex flex-col">
 				<span className="block font-oswald text-6xl timeline-title text-start">
 					Order of

@@ -6,6 +6,7 @@ import NavBar from './Components/NavBar/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import { useState, createContext } from 'react';
 import WeddingParty from './Components/Pages/WeddingParty';
+import FoodRec from './Components/Pages/FoodRec';
 
 export const NavContext = createContext(false);
 
@@ -39,6 +40,10 @@ function App() {
 					<Route 
 						path="wedding-party"
 						element={<WeddingParty />}
+					/>
+					<Route 
+						path='drink-food-pairings'
+						element={<FoodRec />}
 					/>
 				</Routes>
 			</NavContext.Provider>

@@ -5,12 +5,12 @@ import heart from '../../images/heart.png';
 
 const WeddingParty = () => {
 	return (
-		<div className="page w-full background-overlay">
-			<div className="text-5xl font-parisienne p-2 text-center mt-10 whitespace-nowrap">
+		<div className="page w-full background-overlay flex-col">
+			<div className="text-6xl font-parisienne text-center my-8 whitespace-nowrap">
 				Wedding Party
 			</div>
 			<div className="divider"></div>
-			<div className="block overflow-scroll h-2/3 drop-shadow-lg">
+			<div className="block overflow-scroll w-full h-2/3 drop-shadow-lg">
 				{WEDDINGPARTY.map((person, index) => {
 					return (
 						<Card
@@ -28,7 +28,7 @@ const WeddingParty = () => {
 			/>
 			<img
 				src={background}
-				className="background sm:w-full"
+				className="background"
 				alt="background"
 			/>
 		</div>

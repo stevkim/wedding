@@ -8,8 +8,8 @@ const TimelineList = () => {
 					timeline.map(item => {
 						const { time, event } = item;
 						return (
-							<li key={event} className='border-b-2 indent-2 mb-2 w-10/12 mx-auto'>
-								<span className='font-oswald mr-6'>{time}</span>
+							<li key={event} className='border-b-2 indent-2 mb-2 w-10/12 mx-auto md:text-2xl md:indent-[40%]'>
+								<span className='font-oswald mr-6 md:mr-12'>{time}</span>
 								<span className='font-edu'>{event}</span>
 							</li>
 						)
