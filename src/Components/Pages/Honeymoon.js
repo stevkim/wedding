@@ -24,10 +24,10 @@ const Honeymoon = () => {
 				</div>
 			</div>
 			<div className="divider"></div>
-			<p className="font-edu mb-4 w-full text-center md:text-3xl">
+			<p className="font-edu mb-2 w-full text-center md:text-3xl">
 				Below are the links to our fund!
 			</p>
-			<div className="w-10/12 md:w-1/2 flex flex-col md:flex-row items-center justify-between">
+			<div className="w-10/12 md:w-1/2 flex flex-col md:flex-row items-center justify-between my-8">
 				<div className="w-1/2 my-1 p-2 max-w-xs">
 					<a
 						href="venmo"

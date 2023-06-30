@@ -6,11 +6,11 @@ import { NavContext } from '../../App';
 
 const NavBar = () => {
 	const Links = [
-		{ name: 'TIMELINE', link: 'timeline' },
+		{ name: 'ORDER OF EVENTS', link: 'timeline' },
 		{ name: 'WEDDING PARTY', link: 'wedding-party'},
 		{ name: 'GIFT REGISTRY', link: 'registry' },
 		{ name: 'TABLE SEATING', link: 'table-seating' },
-		{ name: 'DRINK PAIRINGS', link: 'drink-menu'}
+		{ name: 'DRINK MENU', link: 'drink-menu'}
 	];
 	const { nav, openNav } = useContext(NavContext);
 
@@ -22,7 +22,7 @@ const NavBar = () => {
 			<div className="flex md:flex-col bg-white items-center justify-between px-7 pb-0 overflow-hidden h-[50px] md:h-auto">
 				<div className="flex items-center">
 					<Link
-						to={'/'}
+						to={'/wedding'}
 						onClick={() => openNav(false)}
 					>
 						<img

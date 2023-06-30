@@ -22,7 +22,7 @@ function App() {
 				<NavBar />
 				<Routes>
 					<Route
-						path="/"
+						path="/wedding"
 						element={<Welcome />}
 					/>
 					<Route
