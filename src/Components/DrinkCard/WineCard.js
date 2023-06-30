@@ -1,8 +1,16 @@
+import { useInView } from 'framer-motion';
+import { useContext, useRef } from 'react';
+import { ContainerContext } from '../Pages/FoodRec';
+
 const WineCard = ({ props }) => {
 	const { name, image, description, pair } = props;
 
+	const ref = useRef(null);
+	const container = useContext(ContainerContext);
+	const isInView = useInView(ref, {root: container, once: true})
+
 	return (
-		<div className="w-10/12 mx-auto glassmorphism p-2 flex items-center flex-wrap justify-center relative rounded-sm my-8">
+		<div className={`w-10/12 mx-auto glassmorphism p-2 flex items-center flex-wrap justify-center relative rounded-sm my-8 ${isInView ? 'animate-right' : ''}`} ref={ref}>
 			<div className="font-parisienne font-bold md:text-3xl w-full text-center whitespace-nowrap z-[1] mb-2">
 				- {name} -
 			</div>

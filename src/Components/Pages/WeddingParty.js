@@ -2,8 +2,13 @@ import Card from '../Card/Card';
 import { WEDDINGPARTY } from '../../data/wedding-party';
 import background from '../../images/background-main.png';
 import heart from '../../images/heart.png';
+import { createContext, useRef } from 'react';
+
+export const PartyContext = createContext(null);
 
 const WeddingParty = () => {
+	const container = useRef(null);
+
 	return (
 		<div className="page w-full background-overlay flex-col">
 			<div className="text-6xl font-parisienne text-center my-8 whitespace-nowrap">
@@ -11,6 +16,7 @@ const WeddingParty = () => {
 			</div>
 			<div className="divider"></div>
 			<div className="block overflow-scroll w-full h-2/3 drop-shadow-lg">
+				<PartyContext.Provider value={container}>
 				{WEDDINGPARTY.map((person, index) => {
 					return (
 						<Card
@@ -19,6 +25,7 @@ const WeddingParty = () => {
 						/>
 					);
 				})}
+				</PartyContext.Provider>
 			</div>
 			<div className="divider"></div>
 			<img
