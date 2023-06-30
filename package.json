@@ -18,7 +18,7 @@
 		"react-scripts": "5.0.1"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "serve -s build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
@@ -46,17 +46,7 @@
 		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
 		"@babel/preset-env": "^7.22.5",
 		"babel-loader": "^9.1.2",
+		"serve": "^14.2.0",
 		"webpack": "^5.88.1"
-	},
-	"babel": {
-		"presets": [
-			[
-				"@babel/preset-react",
-				{
-					"useBuiltIns": "usage",
-					"corejs": 3
-				}
-			]
-		]
 	}
 }
