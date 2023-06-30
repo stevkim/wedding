@@ -32,9 +32,7 @@ html {
 @media only screen and (min-width: 640px) {
   .page {
     margin: 0 auto;
-  }
-  html {
-    overflow: hidden;
+    overflow: show;
   }
 }
 
@@ -152,6 +150,11 @@ html {
 
 .content-background {
   background: rgba(251, 250, 245, .6);
+}
+
+.card-image {
+  width: 90%;
+  max-width: 12rem;
 }
 
 @keyframes hero-image {

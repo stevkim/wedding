@@ -2,22 +2,6 @@
 
 export const WEDDINGPARTY = [
   {
-    name: 'Nam Heon Kim',
-    role: "Groom's Father",
-  },
-  {
-    name: 'Young Ar Kim',
-    role: "Groom's Mother"
-  },
-  {
-    name: 'Dongqing Yin',
-    role: "Bride's Father"
-  },
-  {
-    name: 'Nong Xu',
-    role: "Bride's Mother"
-  },
-  {
       name: 'Angel Gabriel Ceja',
       role: 'Groomsman'
   },
@@ -50,3 +34,20 @@ export const WEDDINGPARTY = [
       role: 'Bridesmaid'
   },
 ]
+
+// {
+//   name: 'Nam Heon Kim',
+//   role: "Groom's Father",
+// },
+// {
+//   name: 'Young Ar Kim',
+//   role: "Groom's Mother"
+// },
+// {
+//   name: 'Dongqing Yin',
+//   role: "Bride's Father"
+// },
+// {
+//   name: 'Nong Xu',
+//   role: "Bride's Mother"
+// },

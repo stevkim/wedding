@@ -12,19 +12,24 @@ const WeddingParty = () => {
 			<div className="divider"></div>
 			<div className="block overflow-scroll h-2/3 drop-shadow-lg">
 				{WEDDINGPARTY.map((person, index) => {
-					return <Card key={index} props={{ person, index }} />;
+					return (
+						<Card
+							key={index}
+							props={{ person, index }}
+						/>
+					);
 				})}
 			</div>
-			<img
-				src={background}
-				className="background sm:w-full"
-				alt="background"
-			/>
 			<div className="divider"></div>
 			<img
 				src={heart}
 				alt="little heart"
 				className="aspect-square w-[50px] mx-auto mt-8"
+			/>
+			<img
+				src={background}
+				className="background sm:w-full"
+				alt="background"
 			/>
 		</div>
 	);
