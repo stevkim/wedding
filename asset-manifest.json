@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/wedding/static/css/main.c1b78127.css",
-    "main.js": "/wedding/static/js/main.1db53e56.js",
+    "main.css": "/wedding/static/css/main.3900a2df.css",
+    "main.js": "/wedding/static/js/main.8e92340d.js",
     "static/media/background-main.png": "/wedding/static/media/background-main.0f2a93f80df85393708a.png",
     "static/media/background-sub.png": "/wedding/static/media/background-sub.314a8356ffdaf7d127c7.png",
     "static/media/hero.jpg": "/wedding/static/media/hero.f3835ff7fbca3cf4c7c6.jpg",
+    "static/media/moscato.png": "/wedding/static/media/moscato.8307e7bbd9595a24c67a.png",
     "static/media/oliviazhang.jpg": "/wedding/static/media/oliviazhang.af171e8090f3d60badd1.jpg",
     "static/media/angelgabrielceja.jpg": "/wedding/static/media/angelgabrielceja.b9e7f40c1239ef4a2358.jpg",
     "static/media/roxannezhang.jpg": "/wedding/static/media/roxannezhang.8962803a5bd15f308830.jpg",
@@ -16,16 +17,15 @@
     "static/media/carlostovar.jpg": "/wedding/static/media/carlostovar.6521352338948c6ed70d.jpg",
     "static/media/joezeng.jpg": "/wedding/static/media/joezeng.08f94f6fd5fb75936d48.jpg",
     "static/media/lychee.jpeg": "/wedding/static/media/lychee.d200eb825db84c6b5843.jpeg",
-    "static/media/moscato.jpeg": "/wedding/static/media/moscato.f22e3cc851fb612f8470.jpeg",
     "static/media/sapporo.png": "/wedding/static/media/sapporo.c4e370b8f95a4be904b3.png",
     "static/media/zelle.svg": "/wedding/static/media/zelle.e366c34c78865311e4f7e345fefc03c3.svg",
     "static/media/venmo.svg": "/wedding/static/media/venmo.74f3d15fa62c293413a24f59cd5e21f1.svg",
     "index.html": "/wedding/index.html",
-    "main.c1b78127.css.map": "/wedding/static/css/main.c1b78127.css.map",
-    "main.1db53e56.js.map": "/wedding/static/js/main.1db53e56.js.map"
+    "main.3900a2df.css.map": "/wedding/static/css/main.3900a2df.css.map",
+    "main.8e92340d.js.map": "/wedding/static/js/main.8e92340d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1b78127.css",
-    "static/js/main.1db53e56.js"
+    "static/css/main.3900a2df.css",
+    "static/js/main.8e92340d.js"
   ]
 }
