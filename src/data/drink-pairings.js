@@ -1,6 +1,6 @@
 import chardonnay from '../images/chardonnay.png';
 import cabernet from '../images/cabernet.png';
-import moscato from '../images/moscato.jpeg';
+import moscato from '../images/moscato.png';
 import sapporo from '../images/sapporo.png';
 import lychee from '../images/lychee.jpeg';
 import guinness from '../images/guinness.png'

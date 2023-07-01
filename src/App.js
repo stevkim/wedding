@@ -23,7 +23,7 @@ function App() {
 
 	return (
 		<div
-			className="md:border-2 md:shadow-md"
+			className="md:border-2 md:shad	ow-md"
 			onClick={() => openNav(false)}
 		>
 			<NavContext.Provider value={{ nav, openNav }}>

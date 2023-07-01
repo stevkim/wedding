@@ -13,10 +13,10 @@ const SearchBar = () => {
 	}, [open])
 
 	return (
-		<div className="flex w-full relative">
+		<div className="flex w-full relative md:justify-center">
 			<div
-				className={` overflow-hidden flex rounded-sm ${
-					open ? 'w-full' : 'mr-auto w-6 aspect-square'
+				className={` overflow-hidden flex rounded-sm max-w-[20rem] ${
+					open ? 'w-full' : 'mr-auto md:mr-0 w-6 aspect-square'
 				}`}
 			>
 				<div
@@ -49,7 +49,7 @@ const SearchBar = () => {
 					</svg>
 				</div>
 			</div>
-				<div className={`transition-all absolute left-[50px] flex justify-center items-center ${open ? 'translate-x-[150%]' : 'translate-x-0'}`}>
+				<div className={`transition-all absolute left-[50px] md:left-[53%] flex w-full justify-left items-center ${open ? `translate-x-[150%]` : 'translate-x-0'}`}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
