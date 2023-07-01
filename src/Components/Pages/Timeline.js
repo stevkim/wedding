@@ -6,10 +6,10 @@ const Timeline = () => {
 	return (
 		<div className="w-full flex flex-col page items-center">
 			<div className="mt-12 mb-6 mx-auto leading-3 border-2 border-gray-500 justify-center items-center flex flex-col">
-				<span className="block font-oswald text-6xl timeline-title text-start">
+				<span className="block font-oswald text-6xl w-[120%] text-start">
 					Order of
 				</span>
-				<span className="block font-sacramento text-8xl timeline-title text-end">
+				<span className="block font-sacramento text-8xl w-[120%] text-end">
 					Events
 				</span>
 			</div>

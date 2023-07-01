@@ -17,17 +17,17 @@ const Seating = () => {
 					Find Your Table
 				</h2>
 				<div className="divider"></div>
-				<div className="mx-auto my-2">
+				<div className="mb-2 mx-8">
 					<FilterContext.Provider value={{ filter, setFiltered }}>
 						<SearchBar />
 					</FilterContext.Provider>
 				</div>
-				<div className="h-auto p-2 overflow-scroll">
+				<div className="h-auto p-4 overflow-scroll">
 					<Reorder.Group
 						axis="x"
 						values={list}
 						onReorder={setList}
-						className="w-10/12 mx-auto grid grid-cols-2 md:grid-cols-3 gap-5"
+						className="w-full p-2 mx-auto grid grid-cols-2 md:grid-cols-3 gap-5"
 					>
 						{SEATING.map((table) => {
 							if (
@@ -41,7 +41,7 @@ const Seating = () => {
 										initial={{ opacity: 0 }}
 										animate={{ opacity: 1 }}
 										key={table.table}
-										className="py-3 md:p-8 h-auto glassmorphism table"
+										className="py-3 md:p-8 h-auto glassmorphism text-[1.3rem]"
 									>
 										<p className="text-4xl font-parisienne whitespace-nowrap text-center w-full">
 											Table {table.table}

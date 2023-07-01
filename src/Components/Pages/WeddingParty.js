@@ -15,7 +15,7 @@ const WeddingParty = () => {
 				Wedding Party
 			</div>
 			<div className="divider"></div>
-			<div className="block overflow-scroll w-full h-2/3 drop-shadow-lg">
+			<div className="block overflow-y-scroll overflow-x-hidden w-full h-2/3 drop-shadow-lg">
 				<PartyContext.Provider value={container}>
 				{WEDDINGPARTY.map((person, index) => {
 					return (

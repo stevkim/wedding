@@ -13,6 +13,14 @@ export const NavContext = createContext(false);
 function App() {
 	const [nav, openNav] = useState(false);
 
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	
+	window.addEventListener('resize', () => {
+		let vh = window.innerHeight * 0.01;
+  	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	})
+
 	return (
 		<div
 			className="md:border-2 md:shadow-md"

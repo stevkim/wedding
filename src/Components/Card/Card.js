@@ -19,7 +19,7 @@ const Card = ({ props }) => {
 		>
 			<div className="w-1/2 flex justify-center items-center">
 				<img
-					className="flex justify-center items-center rounded-full overflow-hidden aspect-square object-cover card-image"
+					className="flex justify-center items-center rounded-full overflow-hidden aspect-square object-cover w-[90%] max-w-[12rem]"
 					src={image}
 					alt={name}
 				/>

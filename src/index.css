@@ -4,13 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
 html {
-	overflow-x: hidden;
+	overflow: hidden;
 	position: relative;
-	min-height: 100vh;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	width: 100vw;
 	max-width: 1920px;
 	margin: auto;
@@ -21,10 +21,9 @@ html {
 	aspect-ratio: 1 / 1.414;
 	margin: 50px auto 0;
 	overflow: hidden;
-	max-width: 1980px;
 	position: relative;
   display: flex;
-  align-items: center;
+  align-items: center;	
 }
 
 .background-overlay {
@@ -96,7 +95,7 @@ html {
 	max-height: 130vh;
 	object-fit: cover;
 	top: -15%;
-	animation: hero-image 5s linear;
+	animation: hero-image 3s linear;
 }
 
 .background {
@@ -108,10 +107,6 @@ html {
 	object-fit: cover;
 }
 
-.timeline-item {
-	line-height: 2.5rem;
-}
-
 .search-input {
 	height: inherit;
 	width: inherit;
@@ -120,19 +115,15 @@ html {
 	box-sizing: border-box;
 }
 
+.arrow-bounce {
+	animation: bounce 500ms ease-in-out infinite;
+}
+
 .table-wrapper {
 	max-height: 70vh;
 	width: 100%;
 	overflow-y: auto;
 	display: block;
-}
-
-.table {
-	font-size: 1.3rem;
-}
-
-.timeline-title {
-	width: 120%;
 }
 
 .divider {
@@ -144,11 +135,7 @@ html {
 
 .content-background {
 	background: rgba(251, 250, 245, 0.6);
-}
-
-.card-image {
-	width: 90%;
-	max-width: 12rem;
+	box-shadow: 0px 0px 3px 1px rgba(38, 37, 35, 1);
 }
 
 .glassmorphism {
@@ -159,10 +146,6 @@ html {
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
-}
-
-.blend {
-  mix-blend-mode: multiply;
 }
 
 .animate-right {
@@ -177,11 +160,22 @@ html {
 	animation: translateUp 1s ease-out;
 }
 
+.poem {
+	opacity: 0;
+	transform: translateY(300%);
+	transition: all 1s ease-out;
+}
+
+.poem-focus {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 @media only screen and (min-width: 640px) {
 	.page {
 		margin: 0 auto;
 		overflow: show;
-    height: 80vh;
+		height: 85vh;
 	}
   .background {
     width: 100%;
@@ -250,5 +244,17 @@ html {
 	}
 	100% {
 		transform: translateY(0)
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateX(-2px);
+	}
+	50% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(-2px);
 	}
 }

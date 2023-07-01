@@ -8,7 +8,6 @@ module.exports = {
       fontFamily: {
         'parisienne': ['Parisienne', 'cursive'],
         'oswald': ['Oswald', 'sans-serif'],
-        'sacramento': ['Sacramento', 'cursive'],
         'edu': ['Edu NSW ACT Foundation', 'cursive']
       }
     },
