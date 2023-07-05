@@ -2,12 +2,20 @@ import Card from '../Card/Card';
 import { WEDDINGPARTY } from '../../data/wedding-party';
 import background from '../../images/background-main.png';
 import heart from '../../images/heart.png';
-import { createContext, useRef } from 'react';
+import { createContext, useRef, useEffect } from 'react';
 
 export const PartyContext = createContext(null);
 
 const WeddingParty = () => {
 	const container = useRef(null);
+
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		});
+	}, []);
 
 	return (
 		<div className="page w-full background-overlay flex-col">
@@ -17,14 +25,14 @@ const WeddingParty = () => {
 			<div className="divider"></div>
 			<div className="block overflow-y-scroll overflow-x-hidden w-full h-2/3 drop-shadow-lg">
 				<PartyContext.Provider value={container}>
-				{WEDDINGPARTY.map((person, index) => {
-					return (
-						<Card
-							key={index}
-							props={{ person, index }}
-						/>
-					);
-				})}
+					{WEDDINGPARTY.map((person, index) => {
+						return (
+							<Card
+								key={index}
+								props={{ person, index }}
+							/>
+						);
+					})}
 				</PartyContext.Provider>
 			</div>
 			<div className="divider"></div>

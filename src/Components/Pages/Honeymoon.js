@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import background from '../../images/background-main.png';
 import venmo from '../../images/venmo.svg';
 import zelle from '../../images/zelle.svg';
+import Alert from '../Utilities/alert';
 
 const POEM = [
 	'Thank you for celebrating our special day,',
@@ -18,13 +19,30 @@ const POEM = [
 
 const Honeymoon = () => {
 	const [poem, setPoem] = useState(false);
+	const [msg, setMsg] = useState('');
 
 	useEffect(() => {
-		setPoem(true)
-	}, [])
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		});
+		setPoem(true);
+	}, []);
+
+	const handleClick = async () => {
+		let email = 'stephxuzy96@gmail.com';
+		navigator.clipboard.writeText(email).then(() => {
+			setMsg('E-mail copied to your clipboard!');
+			setTimeout(() => {
+				setMsg('');
+			}, 5000);
+		});
+	};
 
 	return (
 		<div className="w-full flex-col page background-overlay">
+			{msg !== '' && <Alert msg={msg} />}
 			<h2 className="text-6xl w-10/12 mx-auto mt-8 mb-4 font-parisienne text-center">
 				Honeymoon Fund
 			</h2>
@@ -51,8 +69,9 @@ const Honeymoon = () => {
 				</p>
 				<div className="w-1/2 my-1 p-2 max-w-xs">
 					<a
-						href="venmo"
+						href="https://venmo.com/u/Steph-Xu"
 						target="_blank"
+						rel="noreferrer"
 					>
 						<img
 							className="scale-75"
@@ -61,16 +80,12 @@ const Honeymoon = () => {
 						/>
 					</a>
 				</div>
-				<div className="w-1/2 my-1 p-2 max-w-xs">
-					<a
-						href="zelle"
-						target="_blank"
-					>
-						<img
-							src={zelle}
-							alt="Zelle Link"
-						/>
-					</a>
+				<div className="w-1/2 my-1 p-2 max-w-xs relative">
+					<img
+						src={zelle}
+						alt="Zelle Link"
+						onClick={handleClick}
+					/>
 				</div>
 			</div>
 			<img
@@ -83,14 +98,3 @@ const Honeymoon = () => {
 };
 
 export default Honeymoon;
-
-// <p>Thank you for celebrating our special day,</p>
-// 					<p>we appreciate your love in every way,</p>
-// 					<p>The greatest gift of all has been your time,</p>
-// 					<p>I hope this doesn't seem out of line.</p>
-// 					<p>But if you wish to give, we have a humble request,</p>
-// 					<p>a small donation to our fund would be best.</p>
-// 					<p>For a romantic getaway, thanks to you,</p>
-// 					<p>we will cherish the memories through and through.</p>
-// 					<p>If however, you found a gift on the way,</p>
-// 					<p>not to worry, because we will love it anyway!</p>

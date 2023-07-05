@@ -22,8 +22,8 @@ html {
 	margin: 50px auto 0;
 	overflow: hidden;
 	position: relative;
-  display: flex;
-  align-items: center;	
+	display: flex;
+	align-items: center;
 }
 
 .background-overlay {
@@ -32,15 +32,6 @@ html {
 
 .hero-page {
 	background: rgba(251, 250, 245, 0.4);
-}
-
-.menu-bar-wrapper {
-	width: 15px;
-	aspect-ratio: 1 / 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	overflow: hidden;
 }
 
 .bar {
@@ -67,8 +58,6 @@ html {
 .hero-title {
 	border: 1px solid black;
 	border-radius: 1px;
-	white-space: nowrap;
-	width: 50%;
 	animation: fade-in 0.5s ease-in;
 	box-sizing: border-box;
 }
@@ -89,12 +78,8 @@ html {
 }
 
 .hero-background {
-	z-index: -10;
-	position: absolute;
 	height: 130%;
 	max-height: 130vh;
-	object-fit: cover;
-	top: -15%;
 	animation: hero-image 3s linear;
 }
 
@@ -103,27 +88,12 @@ html {
 	position: absolute;
 	height: 100%;
 	max-height: 100vh;
-  aspect-ratio: 1/1.4;
+	aspect-ratio: 1/1.4;
 	object-fit: cover;
-}
-
-.search-input {
-	height: inherit;
-	width: inherit;
-	text-indent: 0.5rem;
-	line-height: 1rem;
-	box-sizing: border-box;
 }
 
 .arrow-bounce {
 	animation: bounce 500ms ease-in-out infinite;
-}
-
-.table-wrapper {
-	max-height: 70vh;
-	width: 100%;
-	overflow-y: auto;
-	display: block;
 }
 
 .divider {
@@ -145,7 +115,7 @@ html {
 	-webkit-backdrop-filter: blur(4px);
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
-  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
 }
 
 .animate-right {
@@ -177,16 +147,16 @@ html {
 		overflow: show;
 		height: 85vh;
 	}
-  .background {
-    width: 100%;
-    object-position: 50% 20%;
-  }
-  .hero-background {
-    object-position: 50% 100%;
-  }
-  .divider {
-    width: 90%;
-  }
+	.background {
+		width: 100%;
+		object-position: 50% 20%;
+	}
+	.hero-background {
+		object-position: 50% 100%;
+	}
+	.divider {
+		width: 90%;
+	}
 }
 
 @keyframes hero-image {
@@ -243,7 +213,7 @@ html {
 		transform: translateY(100%);
 	}
 	100% {
-		transform: translateY(0)
+		transform: translateY(0);
 	}
 }
 

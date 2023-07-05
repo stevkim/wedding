@@ -15,11 +15,11 @@ function App() {
 
 	let vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
-	
+
 	window.addEventListener('resize', () => {
 		let vh = window.innerHeight * 0.01;
-  	document.documentElement.style.setProperty('--vh', `${vh}px`);
-	})
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	});
 
 	return (
 		<div
@@ -45,12 +45,12 @@ function App() {
 						path="registry"
 						element={<Honeymoon />}
 					/>
-					<Route 
+					<Route
 						path="wedding-party"
 						element={<WeddingParty />}
 					/>
-					<Route 
-						path='drink-menu'
+					<Route
+						path="drink-menu"
 						element={<FoodRec />}
 					/>
 				</Routes>

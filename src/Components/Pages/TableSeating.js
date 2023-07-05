@@ -1,4 +1,4 @@
-import { useState, createContext } from 'react';
+import { useState, createContext, useEffect } from 'react';
 import { Reorder } from 'framer-motion';
 import SearchBar from '../Utilities/search-bar';
 import { SEATING } from '../../data/seating';
@@ -9,6 +9,14 @@ export const FilterContext = createContext('');
 const Seating = () => {
 	const [list, setList] = useState(SEATING);
 	const [filter, setFiltered] = useState('');
+
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		});
+	}, []);
 
 	return (
 		<div className="page w-full background-overlay flex-col">

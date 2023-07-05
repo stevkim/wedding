@@ -1,8 +1,17 @@
 import TimelineList from '../Timeline/TimelineList';
 import backgroundSub from '../../images/background-sub.png';
 import heart from '../../images/heart.png';
+import { useEffect } from 'react';
 
 const Timeline = () => {
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth',
+		});
+	}, []);
+
 	return (
 		<div className="w-full flex flex-col page items-center">
 			<div className="mt-12 mb-6 mx-auto leading-3 border-2 border-gray-500 justify-center items-center flex flex-col">

@@ -8,9 +8,9 @@ const SearchBar = () => {
 
 	useEffect(() => {
 		if (open) {
-			ref.current.focus()
+			ref.current.focus();
 		}
-	}, [open])
+	}, [open]);
 
 	return (
 		<div className="flex w-full relative md:justify-center">
@@ -27,7 +27,7 @@ const SearchBar = () => {
 					<input
 						type="text"
 						value={filter}
-						className={'search-input'}
+						className="w-full indent-[.5rem] leading-[1rem]"
 						onChange={(event) => setFiltered(event.target.value.toLowerCase())}
 						placeholder={open ? 'Search By Name' : ''}
 						ref={ref}
@@ -49,23 +49,27 @@ const SearchBar = () => {
 					</svg>
 				</div>
 			</div>
-				<div className={`transition-all absolute left-[50px] md:left-[53%] flex w-full justify-left items-center ${open ? `translate-x-[150%]` : 'translate-x-0'}`}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						strokeWidth={1.5}
-						stroke="currentColor"
-						className="w-6 h-6 arrow-bounce"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-						/>
-					</svg>
-					<p className='ml-2 font-edu text-lg'>You can search by your name!</p>
-				</div>
+			<div
+				className={`transition-all absolute left-[50px] md:left-[53%] flex w-full justify-left items-center ${
+					open ? `translate-x-[150%]` : 'translate-x-0'
+				}`}
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					strokeWidth={1.5}
+					stroke="currentColor"
+					className="w-6 h-6 arrow-bounce"
+				>
+					<path
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+					/>
+				</svg>
+				<p className="ml-2 font-edu text-lg">You can search by your name!</p>
+			</div>
 		</div>
 	);
 };
