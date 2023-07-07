@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/wedding/static/css/main.992c6b27.css",
-    "main.js": "/wedding/static/js/main.3c49d1a4.js",
+    "main.js": "/wedding/static/js/main.c0277a01.js",
     "static/media/background-main.png": "/wedding/static/media/background-main.0f2a93f80df85393708a.png",
     "static/media/background-sub.png": "/wedding/static/media/background-sub.314a8356ffdaf7d127c7.png",
     "static/media/hero.jpg": "/wedding/static/media/hero.f3835ff7fbca3cf4c7c6.jpg",
     "static/media/moscato.png": "/wedding/static/media/moscato.8307e7bbd9595a24c67a.png",
+    "static/media/josevalle.JPG": "/wedding/static/media/josevalle.48c32fdae95c33db0b98.JPG",
     "static/media/oliviazhang.jpg": "/wedding/static/media/oliviazhang.af171e8090f3d60badd1.jpg",
     "static/media/angelgabrielceja.jpg": "/wedding/static/media/angelgabrielceja.b9e7f40c1239ef4a2358.jpg",
     "static/media/roxannezhang.jpg": "/wedding/static/media/roxannezhang.8962803a5bd15f308830.jpg",
     "static/media/ericjung.jpg": "/wedding/static/media/ericjung.b5345be7af0ad8fff5be.jpg",
     "static/media/mjkim.jpg": "/wedding/static/media/mjkim.60a826e814aea3331806.jpg",
+    "static/media/justinhsu.JPG": "/wedding/static/media/justinhsu.a79f0a2ab9c5fef79fd3.JPG",
     "static/media/sharonxu.jpg": "/wedding/static/media/sharonxu.e2872c02f6f8057d485c.jpg",
     "static/media/cabernet.png": "/wedding/static/media/cabernet.2e32e2e1e87323d0400a.png",
     "static/media/chardonnay.png": "/wedding/static/media/chardonnay.84d7b74da4ea67e1cef2.png",
@@ -22,10 +24,10 @@
     "static/media/venmo.svg": "/wedding/static/media/venmo.74f3d15fa62c293413a24f59cd5e21f1.svg",
     "index.html": "/wedding/index.html",
     "main.992c6b27.css.map": "/wedding/static/css/main.992c6b27.css.map",
-    "main.3c49d1a4.js.map": "/wedding/static/js/main.3c49d1a4.js.map"
+    "main.c0277a01.js.map": "/wedding/static/js/main.c0277a01.js.map"
   },
   "entrypoints": [
     "static/css/main.992c6b27.css",
-    "static/js/main.3c49d1a4.js"
+    "static/js/main.c0277a01.js"
   ]
 }
