@@ -18,7 +18,7 @@ export const SEATING = [
     table: 6, guests: ['Eric Zhuang', 'Julia Balas', 'Gabriel Rothman', 'Harsh Chandra', 'Irem Oz', 'Carlos Jaimes Noriega', 'Sibonay Koo', 'Zabir Islam']
   },
   {
-    table: 7, guests: ['Allan Wan', 'Coe Johnson', 'Elly McClane', 'Ryan Wood', 'Esther Chan', 'John Goto', 'John Sun', 'Pragash Sivasundaram', 'Tony Su']
+    table: 7, guests: ['Allan Wan', 'Coe Johnson', 'Elly McClane', 'Ryan Wood', 'Esther Chan', 'John Goto', 'John Sun', 'Jazel Canseco', 'Tony Su']
   },
   {
     table: 8, guests: ['Byung Woo Kim', 'Hyun Ju Lee', 'Hyomin Kim', 'Ok Shin Ja', 'Hae Sung Yoo', 'Kimmer Yoo']

@@ -6,8 +6,15 @@ import sharon from '../images/sharonxu.jpg';
 import mj from '../images/mjkim.jpg';
 import olivia from '../images/oliviazhang.jpg';
 import roxanne from '../images/roxannezhang.jpg';
+import jose from '../images/josevalle.JPG';
+import justin from '../images/justinhsu.JPG';
 
 export const WEDDINGPARTY = [
+	{
+		name: 'Jose Valle-Cano',
+		role: 'Officiant',
+		image: jose,
+	},
 	{
 		name: 'Angel Gabriel Ceja',
 		role: 'Groomsman',
@@ -47,6 +54,11 @@ export const WEDDINGPARTY = [
 		name: 'Sharon Xu',
 		role: 'Bridesmaid',
 		image: sharon,
+	},
+	{
+		name: 'Justin Hsu',
+		role: 'Flower Boy',
+		image: justin
 	},
 ];
 
