@@ -35,7 +35,7 @@
 ## About
 <a id='about'></a>
 <p>
-  A wedding site used as an itinerary @ our wedding on July 9, 2023. Served a guest list of 100 people. The wedding was held @ <a href='https://www.thejardindelsol.com/'>Jardin del Sol</a> and was one of the greatest moments of my life! 
+  A wedding site used as an itinerary @ our wedding on July 9, 2023 that served a guest list of 100 people. The wedding was held @ <a href='https://www.thejardindelsol.com/'>Jardin del Sol</a> and was one of the greatest moments of my life! 
   This project was one of my first projects and always serves as a reminder that she is the reason i keep going. The project was first created to be used on mobile, then later optimized for web capabilities.
 </p>
 
