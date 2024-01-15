@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+<h1 align='center'>
+ Steven & Steph wedding site
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align='center'>
+<img src='https://github.com/stevkim/wedding/blob/main/src/images/logo.jpg' />
+</p>
 
-## Available Scripts
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href='#about'>
+        About
+      </a>
+      <ul>
+        <li>
+          <a href='#built-with'>Built With</a>
+        </li>
+        <li>
+          <a href='#deployment'>Deployment</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href='takeaways'>Takeaways</a>
+    </li>
+    <li>
+      <a href='visuals'>Visuals</a>
+    </li>
+  </ol>
+</details>
 
-In the project directory, you can run:
 
-### `npm start`
+## About
+<a id='about'></a>
+<p>
+  A wedding site used as an itinerary @ our wedding on July 9, 2023. Served a guest list of 100 people. The wedding was held @ <a href='https://www.thejardindelsol.com/'>Jardin del Sol</a> and was one of the greatest moments of my life! 
+  This project was one of my first projects and always serves as a reminder that she is the reason i keep going. The project was first created to be used on mobile, then later optimized for web capabilities.
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Built With
+<a id='built-with'></a>
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+![ReactRouter](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
 ### Deployment
+<a id='deployment'></a>
+<p>Deployed on Github pages at the time of our wedding. </p>
+![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Takeaways
+<a id='takeaways'></a>
+<p>
+  This project used React's Context hook as state management. The learning to manage state in a slightly more complicated architecture introduced ways to prevent prop-drilling. This project also introduced me to Redux, which I ended up using for later projects.
+</p>
+<p>
+  Framer motion was used for animations. Specifically the useInView hook that allowed me to animate component renders when coming into the viewport of the user. This, in combination with Tailwind css, is allows for fluid transitions.
+</p>
+<p>
+  Another issue i ran into was the sheer size of images. Although they were held locally, they were fairly big in size. I ended up using an <a href='https://tinypng.com/'>online service</a> to compress the images for faster loading times.
+</p>
 
-### `npm run build` fails to minify
+## #wedding
+<a id='visuals'></a>
+### Desktop
+<img src='https://github.com/stevkim/wedding/blob/main/gifs/home.gif' />
+<img src='https://github.com/stevkim/wedding/blob/main/gifs/search.gif' />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Mobile
+<img src='https://github.com/stevkim/wedding/blob/main/gifs/mobile.gif' />
