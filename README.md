@@ -3,8 +3,10 @@
 </h1>
 
 <p align='center'>
-<img src='https://github.com/stevkim/wedding/blob/main/src/images/logo.jpg' />
+ <img src='https://github.com/stevkim/wedding/blob/main/src/images/logo.jpg' />
+ <p align='center'>Deployed on Github pages - <a href='https://stevkim.github.io/wedding/'>here</a></p>
 </p>
+
 
 <details>
   <summary>Table of Contents</summary>
