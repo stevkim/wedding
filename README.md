@@ -50,7 +50,8 @@
 
 ### Deployment
 <a id='deployment'></a>
-<p>Deployed on Github pages at the time of our wedding. </p>
+<p>Deployed on Github pages @ <a href='https://stevkim.github.io/wedding/' target='_blank'>wedding</a>. </p>
+
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 ## Takeaways
